@@ -45,6 +45,9 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			if m.selected == "Quit" {
 				return m, tea.Quit
 			}
+			if m.selected == "Rosary" {
+
+			}
 		}
 	}
 	return m, nil
@@ -61,9 +64,9 @@ var (
 			Foreground(lipgloss.Color("212")) // light blue
 
 	menuBox = lipgloss.NewStyle().
-			Border(lipgloss.RoundedBorder()).
-			Padding(1, 3).
-			BorderForeground(lipgloss.Color("240"))
+		Border(lipgloss.RoundedBorder()).
+		Padding(1, 3).
+		BorderForeground(lipgloss.Color("240"))
 
 	faintText = lipgloss.NewStyle().Faint(true)
 )
@@ -93,7 +96,6 @@ func (m model) View() string {
 		return menu
 	}
 
-
 	return lipgloss.Place(
 		m.width, m.height,
 		lipgloss.Center, lipgloss.Center,
@@ -105,7 +107,7 @@ func (m model) View() string {
 
 func main() {
 	m := model{
-		choices: []string{"Daily Office", "Rosary", "Psalms", "Settings", "Quit"},
+		choices: []string{"Rosary", "Quit"},
 	}
 
 	finalModel, err := tea.NewProgram(m, tea.WithAltScreen()).Run()
@@ -115,6 +117,6 @@ func main() {
 	}
 
 	if fm, ok := finalModel.(model); ok && fm.selected != "" {
-		fmt.Printf("\nYou selected: %s\n", fm.selected)
+		fmt.Printf("%s\n", fm.selected)
 	}
 }

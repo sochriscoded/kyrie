@@ -10,7 +10,7 @@ INSERT INTO acutis(miracle_id, nation, city, year_int, primary_info) VALUES
 (3, "Argentina","Buenos Aires", 1996, "On August 15 1996, during the Mass of the Assumption of the Most Holy Virgin, a consecrated Host, which fell to the ground during the distribution of Communion, had to be placed again in a vessel of water so that it would dissolve. A few days later, on August 26, a Eucharistic minister opened the tabernacle and saw that the Host had transformed into Blood.");
 
 INSERT INTO acutis(miracle_id, nation, city, year_int, primary_info) VALUES
-(4, "Austria", "Fiecht", 1384, "");
+(4, "Austria", "Fiecht", 1384, "During Mass, the priest was tempted to believe that there was no Real Presence of Jesus within the Eucharist. However, after the consecration, the wine became Blood and soon overflowed the chalice. The blood was still intact 170 years later and is preserved within a reliquary.");
 
 INSERT INTO acutis(miracle_id, nation, city, year_int, primary_info) VALUES
 (5, "Austria", "Seefeld", 1411, "");
