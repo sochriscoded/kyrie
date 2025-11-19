@@ -1,8 +1,7 @@
-package mainmenu
+package screens
 
 import (
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/sochriscoded/kyrie/internal/screens/settings"
 	"github.com/sochriscoded/kyrie/internal/ui"
 )
 
@@ -23,7 +22,7 @@ func (m MainMenu) Update(msg tea.Msg) (ui.Screen, tea.Cmd) {
 
 		case "enter":
 			// Switch to Settings screen
-			return settings.NewSettingsScreen(), nil
+			return NewSettingsScreen(), nil
 
 		case "q", "ctrl+c":
 			return m, tea.Quit

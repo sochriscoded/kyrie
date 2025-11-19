@@ -1,8 +1,7 @@
-package view
+package screens
 
 import (
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/sochriscoded/kyrie/internal/screens/mainmenu"
 	"github.com/sochriscoded/kyrie/internal/ui"
 )
 
@@ -15,7 +14,7 @@ type RootModel struct {
 
 func NewRootModel() RootModel {
 	return RootModel{
-		active: mainmenu.NewMainMenu(),
+		active: NewMainMenu(),
 	}
 }
 
