@@ -2,7 +2,6 @@ package screens
 
 import (
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/sochriscoded/kyrie/internal/ui"
 )
 
 type SettingsScreen struct{}
@@ -15,7 +14,7 @@ func (m SettingsScreen) Init() tea.Cmd {
 	return nil
 }
 
-func (m SettingsScreen) Update(msg tea.Msg) (ui.Screen, tea.Cmd) {
+func (m SettingsScreen) Update(msg tea.Msg) (Screen, tea.Cmd) {
 	switch msg := msg.(type) {
 
 	case tea.KeyMsg:

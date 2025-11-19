@@ -2,14 +2,13 @@ package screens
 
 import (
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/sochriscoded/kyrie/internal/ui"
 )
 
 // Screen is a small interface each screen implements.
 // This lets the root model easily switch between screens.
 
 type RootModel struct {
-	active ui.Screen
+	active Screen
 }
 
 func NewRootModel() RootModel {
